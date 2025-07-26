@@ -24,10 +24,10 @@ function saveName() {
 
 function updateBookStats() {
   bookCountEl.textContent = user.books.length;
-  let lvl = "Rookie Reader";
-  if (user.books.length >= 5) lvl = "Page Turner";
-  if (user.books.length >= 10) lvl = "Literary Beast";
-  if (user.books.length >= 20) lvl = "Legendary Reader";
+  let lvl = "📖 Rookie Reader";
+  if (user.books.length >= 5) lvl = "🔥 Page Turner";
+  if (user.books.length >= 10) lvl = "🏆 Literary Beast";
+  if (user.books.length >= 20) lvl = "👑 Legendary Reader";
   readerLevelEl.textContent = lvl;
 }
 
