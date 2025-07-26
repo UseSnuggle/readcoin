@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ReadCoin (R3AD)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📚 ReadCoin (R3AD)</h1>
+    <p>Turn books into NFTs. Earn $R3AD. Level up.</p>
+
+    <div id="profileSection">
+      <input type="text" id="username" placeholder="Enter your name" />
+      <button onclick="saveName()">Start Reading</button>
+    </div>
+
+    <div id="mainApp" style="display: none;">
+      <h2>Welcome, <span id="displayName"></span>!</h2>
+      <p>You’ve logged <span id="bookCount">0</span> books | Level: <span id="readerLevel">Rookie Reader</span></p>
+
+      <form id="bookForm">
+        <input type="text" id="title" placeholder="Book Title" required />
+        <input type="text" id="author" placeholder="Author" required />
+        <textarea id="review" placeholder="Short Review" required></textarea>
+        <button type="submit">Log Book</button>
+      </form>
+
+      <h3>Your NFT Bookshelf</h3>
+      <div id="bookList"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
